@@ -30,7 +30,7 @@ This module assumes that the database to be used is a MySQL database.
 	* CSS Files
 		- api_style.css
 3. Create an element to use as a trigger for the dialog box i.e:
-	- `<button type="button" onclick="create_modal(`id`, `data`, `action`, `method`)" data-target="#`id`">Button</button>`
+	- <button type="button" onclick="create_modal(`id`, `data`, `action`, `method`)" data-target="#`id`">Button</button>
 	where:
 	* id  = ID used to identify the modal
 	* data = table columns from the database
