@@ -20,6 +20,7 @@ This module assumes that the database to be used is a MySQL database.
 	- SESSION_SECRET=""
 3. Navigate to the folder directory and open cmd
 4. Run `npm run dev`
+5. Click the button
 
 ## External App Setup
 1. Navigate to the public directory inside the project directory
@@ -30,12 +31,12 @@ This module assumes that the database to be used is a MySQL database.
 	* CSS Files
 		- api_style.css
 3. Create an element to use as a trigger for the dialog box i.e:
-	- <button type="button" onclick="create_modal(`id`, `data`, `action`, `method`)" data-target="#`id`">Button</button>
+	- `<button type="button" onclick="create_modal([id], [data], [action], [method])" data-target="#[id]">Button</button>`
 	where:
 	* id  = ID used to identify the modal
 	* data = table columns from the database
 	* action = form action link
 	* method = form method ('GET'/'POST')
 
-## Usage Example
-![alt text](public/graphics/demo1.png, 'Actual implementation')
+## How It Works
+![alt text](public/graphics/demo1.png 'Actual implementation')
