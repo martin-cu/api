@@ -1,0 +1,680 @@
+/*
+* Custom Styles
+*/
+@use "material-components-web/material-components-web";
+
+body {
+  max-width: 100vw !important;
+	min-width: max-content !important;
+  overflow-x: auto;
+}
+
+.btn-cancel {
+  background-color: #eae2b7;
+  border-color: #f2e9e4;
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+    right: 0.5em;
+    content: "\2193";
+    font-size: 18px;
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "\2191";
+    font-size: 18px;
+}
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 0.3em;
+    display: block;
+    opacity: 0.3;
+}
+
+table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+}
+
+.th-responsive {
+  cursor: pointer;
+  margin-top:5px;
+}
+
+.center-alert {
+  min-height: max-content;
+  height: max-content;
+  width: calc(80% - 200px);
+  position: absolute;
+  left: 200px;
+  margin-left: 10%;
+  top: 3%;
+  margin-top: -200px;
+  font-size: 1rem;
+  z-index: 10;
+  opacity: 1;
+}
+
+.noselect {
+cursor: default;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.material-icons {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* For the "inset" look only */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 2px;
+    background: #c8c8c8; /* actual scrollbar color */
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+.updateField {
+  width: 300px;
+}
+
+
+
+.Container {
+  background-color: #e1dedc;
+  min-height: 100vh !important;
+  padding-top: 47px;
+
+}
+
+.maxTabWidth {
+	max-width: 150px;
+}
+
+.loginCard {
+	width: 500px;
+	min-height: 350px;
+}
+
+.iconButton {
+	all: unset;
+	cursor: pointer;
+	max-height: auto;
+	max-width: max-content;
+}
+
+.btn-filter {
+	background-color:white;
+	color:black;
+	border-radius: 3px;
+	border-style: line;
+	border-color: black;
+	height: 20px;
+	width: max-content;
+}
+
+.dbmodel {
+  min-width: 200px !important;
+  width: 20% !important;
+}
+
+.username, .password {
+  display: flex;
+  margin: 0px auto;
+  width: 300px;
+}
+
+.fillerExpand {
+  min-width: 200px !important;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.fillerMinimize {
+  min-width: 49px !important;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.tabExpand {
+  width: 200px !important;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.tabMinimize {
+  width: 50px !important;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.demo-width-class {
+  width: 320px;
+}
+
+.tab-active {
+  height: 45px;
+  font-size: 12px;
+  background-color: white;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-weight: 550;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+
+.mdc-menu {
+  min-width: 100%;
+}
+
+.recentCard {
+	height: 150px;
+	width: 150px;
+	cursor: pointer;
+}
+
+.card {
+  position: inherit !important;
+}
+
+.cardPill {
+	min-height: 100%;
+	min-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 2px;
+	background-color: red;
+}
+
+.productPaneHeader {
+  min-height: 30px !important;
+  min-width: auto;
+  display: block;
+  font-weight: 510;
+}
+
+.w-statusCard {
+	min-width: 50px;
+	font-size: 14px;
+	margin-top: -10px;
+}
+
+
+.mr-cardLabel {
+	margin-right: 30%;
+}
+
+.recentCard:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+}
+
+.recentIcon {
+	font-size: 50px;
+}
+
+.h6 {
+	font-size: 19px;
+}
+
+.h5 {
+	font-size: 22px;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 45px; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  border-right-style: solid;
+  border-right-color: #ffc107;
+  background-color: #F3F2F1;
+  border-right-width: 1.5px;
+}
+
+.tabToggle {
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+
+.btn-update {
+  background-color: #c9cba3; 
+  border-color: #c9cba3;
+}
+
+.tableTotals {
+  font-size: 0.8rem !important;
+}
+
+.dashTable {
+  min-width: max-content !important;
+  width: 100% !important;
+}
+
+#DataTables_Table_0_filter {
+  min-width: max-content !important;
+}
+
+.mdc-data-table__content {
+  font-size: 0.6rem;
+}
+
+.smol {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.th-responsive {
+  min-width: max-content !important;
+}
+
+.btn-update:hover {
+  color: #fff;
+  background-color: #b3b67c;
+  border-color: #b3b67c;
+}
+
+.btn-update.focus, .btn-update:focus, .btn-update:focusin, .btn-update:focusout {
+    color: #fff;
+    background-color: #b3b67c !important;
+    border-color: #b3b67c !important;
+}
+
+.tabFeature {
+	height: 45px;
+	background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.tabPill {
+	width: 4px;
+	height: 24px;
+	background-color: #F2C811;
+	border-radius: 2px;
+	margin-top: 10px;
+	margin-left: -10px;
+	margin-right: 6px;
+}
+
+.tabIconLabel {
+	font-size: 15px !important;
+	margin-top: 10.5px;
+	margin-left: 13.8px;
+}
+
+.tabIcon {
+	margin-top: 10px;
+  margin-left: -3px !important;
+}
+
+.list-group-item {
+  text-align: center;
+}
+
+.footer {
+  min-height: 28px;
+  width: 100%;
+  background: -webkit-rgb(34, 46, 62);
+  background: -o-rgb(34, 46, 62);
+  background: -ms-rgb(34, 46, 62);
+  background: -moz-rgb(34, 46, 62);
+  background: rgb(34, 46, 62);
+  margin: 0px;
+  padding: 0px;
+}
+
+.hoverable {
+  cursor: pointer;
+}
+
+.hover-feature {
+	cursor: pointer;
+	font-size: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.hover-feature:hover {
+	background-color: #cccccc;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.py-removeBtn {
+  padding-top: 12px;
+}
+
+.parent{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.sm-wrap {
+	max-width: max-content;
+	max-height: max-content;
+}
+
+/* Icon Rotation Classes */
+.rotate {
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    font-size: 18px;
+}
+
+.form-control {
+  max-width: 300px;
+}
+
+.bg-warning {
+  background-color: #e1dedc !important;
+}
+
+.form-group {
+  min-width: 150px;
+  max-width: 300px;
+  margin-left: 0.5rem;
+}
+
+.filterCheckBox {
+	font-size: 12px;
+}
+
+.nav-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.dataTables_filter {
+  float: right;
+  margin-right:5%;
+  margin-top: 5%;
+}
+
+
+
+.dataTables_length {
+  min-width: max-content !important;
+  margin-left:5%;
+  margin-top: 5%;
+}
+
+.uk-pagination {
+  margin-right: 5%;
+  color: black;
+}
+
+.dataTables_info {
+  margin-left: 5%;
+}
+
+.fit-cell {
+  height: max-content !important;
+  padding: 2px 0px;
+}
+
+.fitHeader-cell {
+  height: 30px !important;
+  padding: 0px 0.3rem !important;
+}
+
+
+.uk-table th {
+  padding: 10px 12px;
+  text-align: center !important;
+  vertical-align: bottom;
+  font-size: .68rem;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.uk-table td {
+  font-size: .6rem;
+  text-align: center !important;
+  padding: 8px 8px;
+}
+
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+th, td {
+  text-align: center;
+}
+
+.mdc-select__anchor {
+  height: max-content !important;
+  min-width: 50px !important;
+  width: auto !important;
+  padding: 0px !important;
+  padding-left: 0px !important;
+}
+
+.mdc-select .mdc-select__anchor {
+  padding: 4px;
+  width: 60px !important;
+}
+
+.mdc-select__anchor .mdc-select__ripple {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+.mdc-select__dropdown-icon {
+  margin: 0px !important;
+  padding: 0px !important;
+  min-width: max-content !important;
+
+  margin-left: -20px !important;
+  color: red;
+}
+
+.mdc-select__anchor::before {
+  display: inline-block;
+  width: 0;
+  height: 20px;
+  content: "";
+  vertical-align: 0;
+}
+
+.mdc-select__selected-text {
+  margin-top: -30px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0px !important;
+  width: 50px !important;
+}
+
+.mdc-data-table__header-cell {
+  text-align:center;
+}
+
+.vericaltext{
+  transform: rotate(65deg);
+  transform-origin: left top 0;
+}
+
+
+.tableH-sm {
+  margin-left: 10px!important;
+  margin: 0px;
+  height: 40px!important;
+}
+
+.table td, .table th {
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Gray */
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-disabled {
+  -webkit-filter: blur(0.1px);
+  -moz-filter: blur(0.1px);
+  -o-filter: blur(0.1px);
+  -ms-filter: blur(0.1px);
+  filter: blur(0.1px);
+  cursor: not-allowed;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: 0px auto !important;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #1a1300;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2.7s linear infinite;
+  animation: spin 2.7s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.dashboard-card {
+  min-width: max-content !important;
+  width: 200px;
+  min-height: 210px;
+}
+
+.recent-card {
+  min-height: 160px !important;
+  min-width: max-content !important;
+  width: 160px;
+   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.recent-card:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  display: block;
+}
+
+.recent-card:after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.stretch-link {
+
+}
+
+

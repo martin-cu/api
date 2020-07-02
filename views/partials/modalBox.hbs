@@ -1,0 +1,32 @@
+<!-- Account Modal -->
+<div class="modal fade" id="">
+  <div class="modal-dialog sticky">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-body d-flex">
+        <div class="mx-auto text-center">
+        {{#if user}}
+          <a class="btn btn-secondary" href="/manage_accounts/my_account/change_password">Change Password</a> or 
+          <a class="btn btn-dark" href="/logout">Logout</a>
+        {{/if}}
+        </div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Update Warning Modal -->
+<div class="modal" tabindex="-1" role="dialog" id="tableModal" aria-labelledby="updateWarning" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog-lg modal-dialog-centered" role="document">
+
+    <div class="modal-content shadow" id="trial">
+
+    </div>
+
+  </div>
+</div>
+
+
