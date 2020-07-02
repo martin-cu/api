@@ -39,4 +39,4 @@ This module assumes that the database to be used is a MySQL database.
 	* method = form method ('GET'/'POST')
 
 ## How It Works
-![alt text](public/graphics/demo1.png 'Actual implementation')
+![alt text](public/graphics/demo1.png "Actual implementation")
