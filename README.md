@@ -53,3 +53,8 @@ This module assumes that the database to be used is a MySQL database.
 ![alt text](public/graphics/demo1.png "Actual implementation")
 ![alt text](public/graphics/demo2.png "Loop used in order to segregate db columns per table")
 ![alt text](public/graphics/demo3.png "MySQL queries in order to get the columns and tables")
+
+## See It In Action
+![alt text](public/graphics/demo4.png "Step 1")
+![alt text](public/graphics/demo5.png "Step 2")
+![alt text](public/graphics/demo6.png "Step 3")
