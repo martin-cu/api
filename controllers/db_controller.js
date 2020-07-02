@@ -80,7 +80,6 @@ exports.query_table = function(req, res) {
 					var obj = {
 							labels: labels, datasets: [data_label]
 					};
-					console.log(obj);
 					obj = JSON.stringify(obj);
 					res.render('home', {
 						tables: data,
